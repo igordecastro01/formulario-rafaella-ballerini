@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Cadastro</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1 id="title">Cadastro de DEVs</h1>
+      <p id="subtitle">Complete suas informações</p>
+      <br />
+    </div>
+
+    <form>
+      <div id="nomeSobrenomeArea">
+        <div id="nomeArea">
+          <label for="nome" class="bold">Nome</label>
+          <input
+            type="text"
+            name="nome"
+            id="nome"
+            placeholder=" Nome"
+            required
+          />
+        </div>
+
+        <div id="sobrenomeArea">
+          <label for="sobrenome" class="bold">Sobrenome</label>
+          <input
+            type="text"
+            name="sobrenome"
+            id="sobrenome"
+            placeholder=" Sobrenome"
+            required
+          />
+        </div>
+      </div>
+
+      <div id="emailArea">
+        <label for="email" class="bold">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder=" Email"
+          required
+        />
+      </div>
+
+      <div id="applicationDev">
+        <label class="bold">De qual lado da aplicação você desenvolve?</label>
+        <label>
+          <input type="radio" name="devweb" value="frontend" checked />Front-End
+        </label>
+        <label>
+          <input type="radio" name="devweb" value="backend" />Back-End
+        </label>
+        <label>
+          <input type="radio" name="devweb" value="fullstack" />Full-Stack
+        </label>
+      </div>
+
+      <div id="senioridadeContainer">
+        <label class="bold">Senioridade</label>
+        <select id="selectSenioridade">
+          <option value="" selected disabled>Selecione</option>
+          <option value="junior">Júnior</option>
+          <option value="pleno">Pleno</option>
+          <option value="senior">Sênior</option>
+        </select>
+      </div>
+
+      <div id="technologyUsedContainer">
+        <div id="technologyUsed">
+          <label class="bold"
+            >Selecione as tecnologias que você utiliza:
+          </label>
+          <div id="checkboxSelect">
+            <div>
+              <input type="checkbox" name="tech1" value="HTML" />
+              <label for="tech1">HTML</label>
+            </div>
+
+            <div>
+              <input type="checkbox" name="tech2" value="CSS" />
+              <label for="tech2">CSS</label>
+            </div>
+
+            <div>
+              <input type="checkbox" name="tech3" value="JS" />
+              <label for="tech3">JavaScript</label>
+            </div>
+
+            <div>
+              <input type="checkbox" name="tech4" value="Python" />
+              <label for="tech4">Python</label>
+            </div>
+
+            <div>
+              <input type="checkbox" name="tech5" value="C#" />
+              <label for="tech5">C#</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="description">
+        <label for="experiencia" class="bold"
+          >Conte um pouco da sua experiência:
+        </label>
+        <br />
+        <textarea name="experiencia" id="experiencia" rows="6"></textarea>
+      </div>
+
+      <div class="button">
+        <button class="button bold" type="submit">Concluído</button>
+      </div>
+    </form>
+  </body>
+</html>
